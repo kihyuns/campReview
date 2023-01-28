@@ -1,0 +1,19 @@
+* function chain
+
+
+f1() -리턴-> 결과.f2() -리턴-> 결과.f3()
+=f1().f2().f3()
+
+
+
+*fetch() 체인
+
+          fetch() .              then(cb) .                     then(cb) . . .
+       AJAX요청  >응답>         호출  >작업완료 후>       호출
+
+
+
+
+스프링부트는 읽을 뿐 경로는 웹 브라우저가 자동으로 넣는다
+
+(test3) => (lang/variable/test3)

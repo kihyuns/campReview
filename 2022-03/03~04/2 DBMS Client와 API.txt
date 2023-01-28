@@ -1,0 +1,11 @@
+DBMS Client와 API
+
+API = Application Progamming Interface
+
+
+DBMS를 APP을 이용하여 실행하기 위해서는 API가 필요하다
+
+
+DBMS Client는 사람이 DBMS 서버에 명령하는 것이고  (Mysql)
+
+DBMS API는 프로그램이 DBMS 서버에 명령하는 것이다   (java로 비유하면 class)

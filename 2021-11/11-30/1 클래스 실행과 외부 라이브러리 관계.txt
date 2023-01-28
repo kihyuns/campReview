@@ -1,0 +1,28 @@
+클래스 실행과 외부 라이브러리 관계
+
+이클립스는 편집기일 뿐이다
+컴파일러의 기능, 버츄얼 머신의 기능도 없다  jdk를 사용할 뿐이다
+
+Java class를 실행하는 방법은 한가지밖에 없다
+jdk를 설치할 때 포함된 jvm을 실행하는 수 밖에 없다
+
+
+Java에서 제공하는 명령코드들을 library라고 한다
+
+보통 library는 ***.jar 파일 안에 들어있다
+
+.jar = java Archive 라고 한다
+              (보관소)
+
+.war = web Archive / .tar = tape Archive / .ear = Enterprise Archive 
+
+library는 ***.jar 파일 안에 들어있고 이 파일 안에 class들을 묶어둔다
+
+
+App이 기본적으로 제공하는 library를 사용하지만 다른 개발자가 만든 외부 라이브러리도 사용한다
+Java에서 기본으로 제공하는 library인 경우는 따로 클래스 경로를 설정할 필요가 없다
+하지만 외부 library인 경우는 App을 실행할 때 library 파일의 경로를 따로 알려줘야 한다
+*알려주지 않으면  버츄얼 머신이 외부 library를 못찾는다 > 못찾으면 외부 library파일 안에 들어있는 클래스를
+                                                                           사용할 수 없다
+알려주기 위해서는 ClassPath 환경변수에 등록한다
+-classpath 외부라이브러리경로; ... 

@@ -1,0 +1,20 @@
+Byte code 와 JVM
+
+                       생성
+자바 컴파일러        >	Hello.class        >          JVM              >           OS
+
+파워포인터            >	.ppt                >         파워포인터      >  
+			.xls                 >         엑셀              >
+MP3제작 s/w	>	.mp3               >        플레이어
+플래시                 >	.fla                 >       플래시 플레이어  >
+photoshop	>	.gif	        >          그림판          >
+
+
+*Byte코드와 JVM 의 관계는?
+----------------------------------------------------------------------------
+
+자바 언어로 명령문을 작성하는 최소 코드
+
+class Hello  {
+        public static void main (string[]args
+}

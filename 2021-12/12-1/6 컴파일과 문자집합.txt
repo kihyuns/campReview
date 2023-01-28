@@ -1,0 +1,14 @@
+컴파일과 문자집합 (windows에서 컴파일 할 경우)
+
+
+   <UTF-8>                  읽기			       작성
+자바 소스 파일      -------------------->  컴파일러 --------------------> Bytecode
+       △ 				(javac.exe)
+        || 저장
+
+  Eclipse IDE		           명령창(콘솔)
+       △				 (MS949)    > window os에서 컴파일 할 때, 만약 소스파일이
+        ||					     os와 다른 characterset으로 저장했다면, 컴파일 할 때
+					     알려줘야 한다
+   windows				    ex) javac -encoding UTF-8 Hello.java
+   (MS949)

@@ -1,0 +1,30 @@
+*gradle 을 이용한 Maven 표준 프로젝트 디렉
+
+1)프로젝트 폴더로 사용할 디렉토리 생성
+~/git/bitcamp-study/java-lang
+
+
+2)프로젝트 폴더를 구성    =     $gradle init
+
+ex)
+		.html
+		<script>             Domgin - spci
+		(        )   <  이 영역에서 프로그래밍 할 때 사용하는 언어 = Java Script
+		<script>
+
+
+3)이클립스용 프로젝트 설정파일 생성 =  vs코드로 app > 빌드 탭에서 [id java, eclipse] 추가 후에 저장
+ > gradle eclipse 를 적용함 > 적용하면 이클립스에 필요한 것들이 자동으로 설치가 된다
+                                     llc
+***/app $ gradle eclipse > ( project, classpath, settings/ ) 생성***
+                             이클립스 프로젝트를 실행하기 위한 폴더들
+
+
+*gradle를 사용해서  java를 이용한 기능을 실행하고 싶으면 java 플러그 인을 장착해야 한다
+
+
+
+4)이클립스로 들어가서 폴더 만들기  > General > Exsting....  >  경로 지정  >  **app**까지만
+
+
+----------------------------------------------------------------------------------------

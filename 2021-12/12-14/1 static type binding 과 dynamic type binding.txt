@@ -1,0 +1,17 @@
+*static type binding 과 dynamic type binding
+
+
+Java :     int a;                   a=100; //ok          a=true; x
+         고정(static)
+
+*static type binding > 변수 선언시에 결정됨 > 변경불가
+
+
+
+JavaScript :  var a;           a = "hello";  //ok   (string)
+	 undefined       a = true;  //ok
+		         (동적 - dynamic)
+
+*dynamic type binding > 값을 변수에 넣는 순간 변수의 타입이 결정된다
+> 변수의 타입 값에 따라 바뀔 수 있다
+

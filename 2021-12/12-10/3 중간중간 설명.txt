@@ -1,0 +1,12 @@
+이클립스를 거치지않고 html에 바로 업데이트 시키는 법
+이클립스 > window > 프레퍼런스 > 워크스페이스 > Refresh using native hooks or polling 체크
+
+
+2-7 클래스에 선언한 변수를 인스턴스 변수라고 한다
+
+인스턴스 변수는 인스턴스 메서드가 공유한다
+
+
+int temp = size;                          
+size = size +1;                   =     contacts[sizee++]
+contacts[temp]

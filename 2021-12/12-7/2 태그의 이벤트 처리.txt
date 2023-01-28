@@ -1,0 +1,8 @@
+*태그의 이벤트 처리
+
+태그에 대해 특정 이벤트가 발생 했을  때 호출될 함수를 등록
+
+
+웹 브라우저가 호출하는 경우를
+callback 함수, event listener, event handler 라고 한다
+

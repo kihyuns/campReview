@@ -1,0 +1,35 @@
+01 변수, 배열 활용
+
+개발 내용
+-연락처 관리 구현
+*이름 				________________________________________
+*이메일				연락처
+*전화				이름      이메일       전화      회사명
+*팩스
+*직책
+*회사명				________________________________________
+
+
+
+
+1단계) 연락처 목록 화면 구현  (HTML로)
+화면 구현
+-  /static/contact/index.html 생성
+REST API 구현
+-  com.eomcs.mylist.ContactController.list()
+화면과 REST API 연동
+-  static/contact/index.html에 AJAX 적용
+    
+
+
+2단계) 연락처 입력 구현
+
+REST API 구현
+- com.eomcs.mylist.ContactController.add()
+화면구현
+- /static/contact/form.html 생성
+
+3단계) 화면과 REST API 연동 (HTML, JS, AJAX, DOM API, 이벤트 처리)
+
+-
+

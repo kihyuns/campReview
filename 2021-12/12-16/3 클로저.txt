@@ -1,0 +1,23 @@
+*클로저(closure)
+
+funcion outer(){	     _______________
+	var closure = | funcion() {-} | ----> 함수 안에서 정의한 함수
+	retrun closer;
+}
+
+*클로저와 로컬변수
+
+funcion createGreeting(name){
+	var message = name + "님 환영!"        = message(바깥함수의 로컬변수)
+		console.log(message)
+	};
+	retrun fn;
+}
+
+함수 호출이 끝나면 그 함수가 만든 로컬변수도 제거된다
+(name), (message)
+
+클로저는 바깥함수의 로컬변수를 복제해서 쓴다
+
+
+*클로저끼리 복제 변수 공유

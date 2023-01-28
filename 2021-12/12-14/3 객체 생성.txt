@@ -1,0 +1,15 @@
+*설계도 기반 객체 생성과 프로토타입 기반 객체 생성
+
+*자바는 설계도 기반 객체 생성
+
+Java :  class Score {				
+          String name;		        객체 생성(설계도에 따라)
+	int kor		>>    new Score          >          |name| kor | eng |math|
+	int eng
+	int math
+	}
+
+JavaScript : new Score() >>>    object->원형객체  ------> 원형객체+|name| + | kor | + | eng |
+					  복제                 |--------------------------|
+								||
+						원형객체(기본형)    +

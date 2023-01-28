@@ -1,0 +1,9 @@
+Base64 - 바이너리 데이터를 텍스트로 변환할 때 사용하는 인코딩 방식 (안드로이드에서 쓰는 기술)
+
+
+			  byte[]
+      (Base64.getEncoder().encode() => String
+binary >> base64 encoding >> text
+
+binary << base64 encoding << text
+      

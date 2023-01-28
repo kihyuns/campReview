@@ -1,0 +1,59 @@
+리스너 = 이벤트 핸들러
+
+html과 js를 섞지 않는 것이 좋다 - 유지보수에 힘들기 때문
+
+*arrow function은 문장이 한 문장일 때 좋다
+
+
+개발자가 임의로 추가한 속성은 일반적인 방법으로 꺼낼 수 없다
+따라서 getAttribute를 사용해야 한다
+
+
+*이벤트 발생과 전달 과정       예제(js > ex06 > exam04-1)
+
+DOM tree		
+
+  html  ----------------> root element
+    |  >> head
+    |	| >>meta
+    |	| >>title
+    |	| >>style			document에서 div까지 내려가는 것을 capture phase (캡쳐단계) 라고 한다
+    |				div 에서 document 로 올라가는 것을 bubble phase (버블단계) 라고 한다
+    |
+    | >> body
+	| >>h1
+	| >>div
+	       | >>div
+	              | >>button		 div에서 button 으로 도달하는 단계를 target phase
+	              | >>button
+
+
+이벤트가 발생하면 다음 3단계로 전달 된다.
+ 1) capture phase
+   => 부모 태그에서 자식 태그로 내려가는 단계
+ 2) target phase
+   => 이벤트가 발생된 목적지에 도달한 단계
+ 3) bubble phase
+   => 다시 목적지에서 부모 태그로 올라가는 단계
+
+
+보통은 버블링으로 호출되지만 
+
+document.getElementById("btn1").addEventListener("click", function(e) {
+	console.log("버튼1...");
+}, true);    *3번째 파라미터에 true를 주면 캡쳐링으로 호출된다
+
+
+*팁*
+Event.stopPropagation();를 사용하면 그 버튼에 등록된 리스너들만 호출
+
+e.stopImmediatePropagation();를 사용하면 이 버튼태그에 등록된 나머지 리스너도 호출이 안됨
+
+
+특정 태그에 자신이 만든 이벤트를 발생시키는 방법은 발생시킬 태그에 대해서 dispatchEvent(  )를 호출하면 된다
+
+
+e.preventDefault(); 와  return false; 는 a태그의 링크 호출을 막아준다
+addEventListener로 함수를 등록하면 return false가 먹히지 않아서 e.preventDefault();를 사용한다
+
+** e.preventDefault();는 onclick과 addEventListener에 둘다 적용되기 때문에 e.preventDefault();를 사용하자

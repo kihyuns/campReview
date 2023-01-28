@@ -1,0 +1,23 @@
+암시적 형변환				명시적 형변환
+
+int i = 100;			int i = 5;
+float j = 3.04;			int j = 2;
+float s = i+j;			float s;
+				s = (float)i / (float)j;
+i=암시적 형변환
+
+
+
+int 최대값+ int 최대값 = -2
+int x = Integer.MAX_VALUE; // 0x7fffffff = 약 +21억
+int y = Integer.MAX_VALUE; // 0x7fffffff = 약 +21억
+
+    int r1 = x + y; // 0x7fffffff + 0x7fffffff = 0xfffffffe = -2
+       0111 1111 1111 1111 1111 1111 1111 1111(x)
+     + 0111 1111 1111 1111 1111 1111 1111 1111(y)
+     ---------------------------------------------
+       1111 1111 1111 1111 1111 1111 1111 1110(r1)
+
+
+명시적형변환을 사용하면 해결
+(long)x +(long)y

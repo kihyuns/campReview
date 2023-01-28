@@ -1,0 +1,8 @@
+* 메서드 : call by value와 call by reference           *com.eomcs.lang.ex07 Exam0310
+
+call swap(a, b) > 메서드를 호출할 때 a,d 변수를 넘기는게 아니라 변수에 들어있는 값을 넘긴다
+
+temp 변수를 만들어서 값을 저장한 후 값을 변경한다
+
+
+call by reference는 배열 인스턴스(메모리)를 넘기는 것이 아니라 주소를 넘기는 것이다.

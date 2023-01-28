@@ -1,0 +1,17 @@
+*JSON >  ArrayList
+
+
+ObjectMapper = JSON ↔ Object (json을 object로 옮기거나 반대로 옮길 때 사용)
+
+
+
+collection 인터페이스 = 목록을 다루는 것	   AbstractCollection
+*add()
+*remove()
+*size()
+*toArray()
+
+list					   AbstractList
+*add() = 삽입하는 add
+*get()
+*subList() = 부분 목록만 추출하는 기능

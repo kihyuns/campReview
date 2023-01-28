@@ -1,0 +1,30 @@
+*JDBC API와 Driver
+
+JDBC Driver은 ODBC 드라이버를 사용한다
+(ODBC 드라이버를 사용한다는 것은 C/C++ 함수를 호출한다는 뜻이다) - > 100% 자바 코드로만 작성된 것이 아니다
+
+JRE 안에는 JVM과 라이브러리가 들어있다 		Type1 드라이버는 JRE에 기본 포함되어 있다
+
+JDK는 JRE와 컴파일러 디버거 프로파일러 등 기타 도구들을 추가시킨 것이다
+
+
+
+Type2 Driver은 별도의 다운로드가 필요하고 Native API( vendor API) 를 호출한다
+
+ODBC 드라이버를 경유하지 않기 때문에 Native API가 없는 경우 Type2 Driver도 없다
+
+
+
+
+Type3 Driver도 별도의 다운로드가 필요하다 
+
+또한 중계서버용 Driver만 있으면 된다
+*(DBMS별로 드라이버를 다운로드 할 필요가 없다) - 중계서버용 Driver만 있으면 되기 때문 
+*따라서 DBMS 별로 드라이버를 다운로드 할 필요가 없다 
+
+-> 프로그래밍은 편해졌지만 중계서버 비용이 추가됨 + 속도가 느림
+
+
+Type4 Driver도 별도 다운로드 필요
+DBMS 서버와 직접 통신, 실무에서 주로 사용
+

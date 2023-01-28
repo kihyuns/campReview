@@ -1,0 +1,19 @@
+*이스케이프 문자(escape character) = 문자 제어 코드문제 제어 코드
+-화면에 출력하는 문자가 아니라 문자 출력을 제어하는 문자이다.
+
+
+\n - Line Feed(LF), 0x0a         	줄바꿈 문자
+
+\r - Carrage Return(CR), 0x0d		커서(cursor)를 처음으로 돌리는 문자  (커서란? 문자를 출력할 위치를 가리키는 것)
+
+\f - Form Feed, 0x0c		지금은 쓰지 않는 제어 코드
+
+\t - Tab, 0x09			탭 공간을 추가시키는 문자
+
+\b - Backspace, 0x08		커서를 뒤로 한 칸 이동시키는 문자
+	
+\' - Single Quote, 0x27		' 문자를 출력시키는 문자
+	
+\" - Double Quote, 0x22		'' 안에서 " 문자는 그냥 적는다.
+	
+\\ - Backslash, 0x5c		 \ 문자를 출력시키는 문자
