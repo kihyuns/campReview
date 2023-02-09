@@ -1,0 +1,46 @@
+console.dir = 요소를 HTML과 같은 트리 구조로 출력합니다
+*여기서 on이붙은 것들(이벤트)은 쓸 수 있다
+
+addEventListener("type", listener) = 이벤트 추가
+ex) title.addEventListener("mouseenter",mouseon) >> title의 mouseenter타입의 mouseon이벤트를 추가함
+
+removeEventListener("type", listener) = 이벤트 제거
+ex) title.removeEventListener("mouseenter"mouseon) >> title의 mouseenter타입의 mouseon이벤트를 제거함
+
+*onclick이벤트와 동일한 기능을 한다
+ex) title.onmouseenter = mmsov
+
+*onclick 대신 addEventListener를 사용하면 removeEventListener로 이벤트를 제거하기 쉽다.
+*만약 onclick을 사용했고 이벤트를 제거하고 싶다면 jquery를 사용하면 쉽게 제거할 수 있다
+ex)$("#title").attr('onclick', '').unbind('click');
+
+Math.random= 0~1 사이 숫자 랜덤 반환 
+ex) 0.1, 0.8
+
+Math.floor =  주어진 숫자와 같거나 작은 정수 중에서 가장 큰 수를 반환
+*랜덤 숫자 뽑을 때 가장 큰 정수를 뽑을 때 사용
+
+소숫점 없이 사용하는 정수를 뽑고 싶으면 Math.floor(Math.random()*숫자); 사용 
+※+1를 붙혀주면 곱한 값까지의 최댓값
+
+resize = 크기가 변경되면 실행
+ex) function.test() {test.style.color = "red";}
+
+offline , online = 인터넷 연결(WiFi)여부에 따라 실행
+
+h1.classList.toggle("test") = h1의 classList중  test가 있으면 제거, 없으면 추가해준다
+
+
+setInterval(test, 5000); = setInterval은 첫번째로 받은 인자를 실행한다, 두번째로 받은 값의 시간으로 > 5000은 5초이다
+
+// 날짜를 실시간으로 얻기
+    const date = new Date();
+    const dateString = date.toLocaleDateString('ko',{
+        year: 'numeric',
+        month:'short',
+        day: 'numeric',
+        // weekday: 'short',
+        hour: 'numeric',
+        minute: 'numeric',
+        second:'numeric'
+    })
